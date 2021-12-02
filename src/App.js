@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <nav>NavBar</nav>
       react App
-      
+      <footer>Footer</footer>      
     </div>
   );
 }
