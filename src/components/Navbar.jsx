@@ -70,7 +70,9 @@ const navbar = () => {
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
-        <Center><Logo>Falkacity.</Logo></Center>
+        <Center>
+          <Logo>Falkacity.</Logo>
+        </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>Sign In</MenuItem>
@@ -81,7 +83,7 @@ const navbar = () => {
           </MenuItem>
         </Right>
       </Wrapper>
-    </Container >
+    </Container>
   );
 };
 
