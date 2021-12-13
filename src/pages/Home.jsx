@@ -1,5 +1,5 @@
 //  short cut rafce   REACT ARROW FUNCTION EXPORT COMPONENT
-// ? why the {} would not work in slider component?
+//? why the {} would not work in slider component?
 import React from "react";
 import Announcement from "../components/Announcement";
 import Navbar from "../components/Navbar";

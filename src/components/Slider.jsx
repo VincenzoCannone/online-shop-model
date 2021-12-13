@@ -1,4 +1,4 @@
-import { styled } from "@material-ui/core";
+import styled from "styled-components";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 
 const Container = styled.div`
