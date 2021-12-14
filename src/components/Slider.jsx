@@ -5,6 +5,41 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  position: relative;
+  //lets check
+  top: 0;
+  bottom: 0; //? why not left: 0?
+  left: ${(props) => props.direction === "left" && "10px"};
+  right: ${(props) => props.direction === "right" && "10px"};
+  margin: auto; // need a width to work properly
+`;
+
+const Wrapper = styled.div`
+  height: 100%;
+`;
+
+const Slide = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+`;
+
+const ImgContainer = styled.div`
+  flex: 1; // shorthand for flex-grow/-shrink/-basis. Flex:1 here and for info to apply the same size.
+  height: 100%;
+`;
+const Image = styled.img`
+  height: 80%;
+`;
+
+const Title = styled.h1``;
+const Desc = styled.p``;
+const Button = styled.button``;
+
+const InfoContainer = styled.div`
+  flex: 1; //! follow the main axis (if we choose flex dir column the element will resize in height).
+  padding: 50px;
 `;
 
 const Arrow = styled.div`
@@ -12,17 +47,43 @@ const Arrow = styled.div`
   height: 50px;
   background-color: #a89494;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; // position absolute refers to relative position ( Container)
+  // An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+  //lets check
+  top: 0; // in order to use margin: auto to center verticaly
+  bottom: 0; // in order to use margin: auto to center verticaly
+  left: ${(props) => props.direction === "left" && "10px"};
+  right: ${(props) => props.direction === "right" && "10px"};
+  margin: auto; // need a width to work properly
+  cursor: pointer;
+  opacity: 0.5;
 `;
 
 // ?why round braces after return?
 // !<ArrowLeftOutlined> is an icon
+//! we refer to the public folder!! (<Image/>)
 const Slider = () => {
   return (
     <Container>
-      <Arrow>
+      <Arrow direction="left">
         <ArrowLeftOutlined />
       </Arrow>
-      <Arrow>
+      <Wrapper>
+        <Slide>
+          <ImgContainer>
+            <Image src="/Pictures/slider1.png" />
+          </ImgContainer>
+          <InfoContainer>
+            <Title>Summer Sale Mtf</Title>
+            <Desc>Get your 0.1% discount!!</Desc>
+            <Button>Shop Now</Button>
+          </InfoContainer>
+        </Slide>
+      </Wrapper>
+      <Arrow direction="right">
         <ArrowRightOutlined />
       </Arrow>
     </Container>
