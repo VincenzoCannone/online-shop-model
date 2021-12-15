@@ -14,13 +14,14 @@ const Container = styled.div`
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto; // need a width to work properly
-  overflow: hidden; 
+  overflow: hidden;
 `;
 
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
-  transform: translateX(${props => props.slideIndex * -100}vw);
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
+  transition: all 1.5s ease;
 `;
 
 const Slide = styled.div`
@@ -28,7 +29,7 @@ const Slide = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #${props => props.bg}; // The # is to start the hex-color-code.
+  background-color: #${(props) => props.bg}; // The # is to start the hex-color-code.
 `;
 
 const ImgContainer = styled.div`
@@ -46,10 +47,10 @@ const Desc = styled.p`
   margin: 50px 0;
   font-size: 20px;
   font-weight: 500;
-  Letter-spacing: 3px;
+  letter-spacing: 3px;
 `;
 const Button = styled.button`
-  padding:10px;
+  padding: 10px;
   font-size: 20px;
   background-color: transparent;
   cursor: pointer;
@@ -86,27 +87,23 @@ const Arrow = styled.div`
 //! we refer to the public folder!! (<Image/>)
 
 const Slider = () => {
-
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleClick = (direction) => {
-
     if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2); // We start at index 0 (Slide 1) and as the left arrow is clicked and „slideIndex“ ist greater than 0 „setSlideIndex“ will decrease „slideIndex“ by one. Otherwise i will set it to 2 (slide3).
     } else {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
-  }
+  };
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
-
         {sliderItems.map((item) => (
-
-          <Slide bg={item.bg}>
+          <Slide bg={item.bg} key={item.id}>
             <ImgContainer>
               <Image src={item.img} />
             </ImgContainer>
@@ -116,9 +113,7 @@ const Slider = () => {
               <Button>Shop Now</Button>
             </InfoContainer>
           </Slide>
-
         ))}
-
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right)")}>
         <ArrowRightOutlined />
