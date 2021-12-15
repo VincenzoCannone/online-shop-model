@@ -1,5 +1,7 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
+import { sliderItems } from "../data";
 
 const Container = styled.div`
   width: 100%;
@@ -12,10 +14,13 @@ const Container = styled.div`
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto; // need a width to work properly
+  overflow: hidden; 
 `;
 
 const Wrapper = styled.div`
   height: 100%;
+  display: flex;
+  transform: translateX(${props => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -23,6 +28,7 @@ const Slide = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: #${props => props.bg}; // The # is to start the hex-color-code.
 `;
 
 const ImgContainer = styled.div`
@@ -33,9 +39,21 @@ const Image = styled.img`
   height: 80%;
 `;
 
-const Title = styled.h1``;
-const Desc = styled.p``;
-const Button = styled.button``;
+const Title = styled.h1`
+  font-size: 70px;
+`;
+const Desc = styled.p`
+  margin: 50px 0;
+  font-size: 20px;
+  font-weight: 500;
+  Letter-spacing: 3px;
+`;
+const Button = styled.button`
+  padding:10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+`;
 
 const InfoContainer = styled.div`
   flex: 1; //! follow the main axis (if we choose flex dir column the element will resize in height).
@@ -60,30 +78,49 @@ const Arrow = styled.div`
   margin: auto; // need a width to work properly
   cursor: pointer;
   opacity: 0.5;
+  z-index: 2;
 `;
 
 // ?why round braces after return?
 // !<ArrowLeftOutlined> is an icon
 //! we refer to the public folder!! (<Image/>)
+
 const Slider = () => {
+
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleClick = (direction) => {
+
+    if (direction === "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2); // We start at index 0 (Slide 1) and as the left arrow is clicked and „slideIndex“ ist greater than 0 „setSlideIndex“ will decrease „slideIndex“ by one. Otherwise i will set it to 2 (slide3).
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  }
   return (
     <Container>
-      <Arrow direction="left">
+      <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
-      <Wrapper>
-        <Slide>
-          <ImgContainer>
-            <Image src="/Pictures/slider1.png" />
-          </ImgContainer>
-          <InfoContainer>
-            <Title>Summer Sale Mtf</Title>
-            <Desc>Get your 0.1% discount!!</Desc>
-            <Button>Shop Now</Button>
-          </InfoContainer>
-        </Slide>
+      <Wrapper slideIndex={slideIndex}>
+
+        {sliderItems.map((item) => (
+
+          <Slide bg={item.bg}>
+            <ImgContainer>
+              <Image src={item.img} />
+            </ImgContainer>
+            <InfoContainer>
+              <Title>{item.title}</Title>
+              <Desc>{item.desc}</Desc>
+              <Button>Shop Now</Button>
+            </InfoContainer>
+          </Slide>
+
+        ))}
+
       </Wrapper>
-      <Arrow direction="right">
+      <Arrow direction="right" onClick={() => handleClick("right)")}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
