@@ -43,34 +43,34 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: "/Pictures/products/Jacket.png",
+    img: "/Pictures/products/books/Grosse-Kampmann.png",
   },
   {
     id: 2,
-    img: "/Pictures/products/Trousers.png",
+    img: "/Pictures/products/books/Hellmann.jpg",
   },
   {
     id: 3,
-    img: "/Pictures/products/Bag.png",
+    img: "/Pictures/products/books/Lobo.jpg",
   },
   {
     id: 4,
-    img: "/Pictures/products/Shoes.png",
+    img: "/Pictures/products/books/Petrowski.jpg",
   },
   {
     id: 5,
-    img: "/Pictures/products/Skirt.png",
+    img: "/Pictures/products/books/Reischl.jpg",
   },
   {
     id: 6,
-    img: "/Pictures/products/Hat.png",
+    img: "/Pictures/products/books/Sauer.jpg",
   },
   {
     id: 7,
-    img: "/Pictures/products/Shirt.png",
+    img: "/Pictures/products/books/Steinberg.jpg",
   },
   {
     id: 8,
-    img: "/Pictures/products/Watch.png",
+    img: "/Pictures/products/books/Zotzmann.jpg",
   },
 ];
