@@ -1,23 +1,23 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://cdn.pixabay.com/photo/2017/01/27/16/09/people-2013447_1280.jpg",
-    title: "Slide 1",
-    desc: "First Book. And it's awesome.",
+    img: "/Pictures/products/books/Snowden.jpg",
+    title: "Snowden",
+    desc: "Edward Snowden risked everything to expose the U.S. government's system of mass surveillance. Now he tells his story.",
     bg: "f5fafd",
   },
   {
     id: 2,
-    img: "https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_1280.jpg",
-    title: "Slide 2",
-    desc: "Second Book. And it's awesome, too.",
+    img: "/Pictures/products//books/Lobo.jpg",
+    title: "Schwarzbuch Markenfirmen",
+    desc: "Large corporations pursue one goal above all: maximum profit. Humane working conditions, ethical principles and environmental protection often fall victim to this goal.",
     bg: "fcf1ed",
   },
   {
     id: 3,
-    img: "https://cdn.pixabay.com/photo/2018/01/15/07/52/woman-3083402_1280.jpg",
-    title: "Slide 3",
-    desc: "Third Book. This one's awesome as well.",
+    img: "/Pictures/products//dvds/globalHome.jpg",
+    title: "Global Home",
+    desc: "In 'Global Home,' director Eva Stotz visits people she has found in online host networks such as couchsurfing.org and immerses herself for a limited time in their lives: a music-loving Tuareg in Mali, a wildlife lover in Tokyo, Japan, an ecologist in the Palestinian West Bank and a visionary in the USA.",
     bg: "fbf0f4",
   },
 ];
@@ -25,18 +25,18 @@ export const sliderItems = [
 export const categories = [
   {
     id: 1,
-    img: "https://cdn.pixabay.com/photo/2016/03/25/09/04/t-shirt-1278404_960_720.jpg",
-    title: "T-SHIRT",
+    img: "/Pictures/products//books/Zotzmann.jpg",
+    title: "BOOKS",
   },
   {
     id: 2,
-    img: "https://cdn.pixabay.com/photo/2016/05/17/22/16/baby-1399332_960_720.jpg",
-    title: "HAT",
+    img: "/Pictures/products//dvds/ghostInTheShell.jpg",
+    title: "DVDs",
   },
   {
     id: 3,
-    img: "https://cdn.pixabay.com/photo/2014/05/21/14/54/feet-349687_960_720.jpg",
-    title: "PANTS",
+    img: "/Pictures/products/stuff/ssd.jpeg",
+    title: "FUN STUFF",
   },
 ];
 
