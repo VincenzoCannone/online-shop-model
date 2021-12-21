@@ -70,7 +70,9 @@ const ContactItem = styled.div`
   align-items: center;
 `;
 
-const Payment = styled.img``;
+const Payment = styled.img`
+  width: 50%;
+`;
 const Footer = () => {
   return (
     <Container>
@@ -112,14 +114,15 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room /> Infinite Loop Cupertino, CA 95014{" "}
+          <Room style={{ marginRight: "10px" }} /> Infinite Loop Cupertino, CA
+          95014
         </ContactItem>
         <ContactItem>
-          <Phone />
+          <Phone style={{ marginRight: "10px" }} />
           +900 123 123 133
         </ContactItem>
         <ContactItem>
-          <MailOutline />
+          <MailOutline style={{ marginRight: "10px" }} />
           mail@applesecrets.com
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
