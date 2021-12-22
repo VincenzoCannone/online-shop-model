@@ -1,9 +1,9 @@
-import Product from "./pages/Product";
+import Login from "./pages/Login";
 
 //  with RAFCE we can create already and import export call the component Home(will remember the folder)
 
 const App = () => {
-  return <Product />;
+  return <Login />;
 };
 
 export default App;
