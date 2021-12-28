@@ -1,9 +1,7 @@
-import Login from "./pages/Login";
-
-//  with RAFCE we can create already and import export call the component Home(will remember the folder)
-
+//  short cut rafce   REACT ARROW FUNCTION EXPORT COMPONENT
+import Home from "./pages/Home";
 const App = () => {
-  return <Login />;
+  return <Home />;
 };
 
 export default App;
