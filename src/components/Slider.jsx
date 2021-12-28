@@ -2,19 +2,15 @@ import { useState } from "react";
 import styled from "styled-components";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { sliderItems } from "../data";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   position: relative;
-  //lets check
-  top: 0;
-  bottom: 0; //? why not left: 0?
-  left: ${(props) => props.direction === "left" && "10px"};
-  right: ${(props) => props.direction === "right" && "10px"};
-  margin: auto; // need a width to work properly
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 
 const Wrapper = styled.div`
