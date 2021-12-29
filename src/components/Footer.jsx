@@ -82,9 +82,7 @@ const Footer = () => {
     <Container>
       <Left>
         <Logo>FALKACITY.</Logo>
-        <Desc>
-          BALBLBLLFLAFLALFLAFLAFLALFLAFLAFLALFALFALFALFALFLAFLAFLAFLALFALFLAFLAFL
-        </Desc>
+        <Desc>BALBLBLLFLAFLALFLAFLAFLAL</Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
             <Facebook />

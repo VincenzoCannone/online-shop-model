@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   ${mobile({ padding: "10px 0" })}
 `;
 
@@ -35,21 +36,24 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
+  ${mobile({ margin: "auto" })}
 `;
 
 const Input = styled.input`
   border: none;
-  ${mobile({ width: "50px" })}
+  ${mobile({ width: "55px" })}
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
-  ${mobile({ fontSize: "24px" })}
+  ${mobile({ fontSize: "20px" })}
 `;
 
 const Center = styled.div`
   flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
 `;
 
 //? why flex:2 is without ""???
@@ -58,15 +62,17 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  ${mobile({ flex: 2, justifyContent: "center" })}
+  ${mobile({ flex: 1.5, marginRight: "5px" })}
 `;
 
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
   margin-left: 25px;
-  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+  ${mobile({ fontSize: "15px", marginLeft: "10px" })}
 `;
+
+//! Badge number (4) we cant scale it 'badgeContent={4}'
 
 const navbar = () => {
   return (
@@ -83,11 +89,11 @@ const navbar = () => {
           <Logo>Falkacity.</Logo>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>Sign In</MenuItem>
+          <MenuItem>Register</MenuItem>
+          <MenuItem>Log In</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
-              <ShoppingCartOutlined />
+            <Badge color="primary">
+              <ShoppingCartOutlined style={{ fontSize: "15px" }} />
             </Badge>
           </MenuItem>
         </Right>

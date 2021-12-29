@@ -23,7 +23,6 @@ const Wrapper = styled.div`
   ${mobile({ width: "75%" })}
 `;
 
-//! Shorthand: font: 24px 300;
 const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
