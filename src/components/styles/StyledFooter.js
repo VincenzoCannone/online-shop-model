@@ -3,7 +3,7 @@ import mobile from "../../responsive";
 
 export const Container = styled.div`
   display: flex;
-  background-color: aliceblue;
+  background-color: var(--gray_light);
   ${mobile({ flexDirection: "column" })}
 `;
 
