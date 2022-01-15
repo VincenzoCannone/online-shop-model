@@ -13,6 +13,7 @@ export const Info = styled.div`
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease;
+  border-radius: 5%;
   cursor: pointer;
 `;
 
@@ -24,7 +25,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #287b97;
+  background-color: var(--products-bg);
+  border-radius: 5%;
   position: relative;
 
   &:hover ${Info} {
@@ -44,9 +46,9 @@ export const Image = styled.img`
   height: 75%;
   z-index: 2;
 
-  /*   Object-fit helps with pictures that are two wide … but it needs both: width & height;
+    Object-fit helps with pictures that are two wide … but it needs both: width & height;
 width: 100%;
-object-fit: cover; */
+object-fit: contain;
 `;
 
 export const Icon = styled.div`

@@ -1,10 +1,12 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import mobile from "../../responsive";
 
 export const Container = styled.div`
   display: flex;
-  background-color: var(--gray_light);
+  /* align-items: flex-start; */
+  background: var(--footer-bg);
   ${mobile({ flexDirection: "column" })}
+  height: 35vh;
 `;
 
 export const Left = styled.div`
@@ -14,10 +16,15 @@ export const Left = styled.div`
   padding: 20px;
 `;
 
-export const Logo = styled.h1``;
+export const Logo = styled.h1`
+  color: var(--font-bright);
+  font-family: "Roboto", sans-serif;
+`;
 
 export const Desc = styled.p`
   margin: 20px 0px;
+  font-family: "Roboto", sans-serif;
+  color: var(--font-bright);
 `;
 
 export const SocialContainer = styled.div`
@@ -44,6 +51,8 @@ export const Center = styled.div`
 
 export const Title = styled.h3`
   margin-bottom: 20px;
+  color: var(--font-bright);
+  font-family: "Roboto", sans-serif;
 `;
 
 export const List = styled.ul`
@@ -52,6 +61,8 @@ export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  color: var(--font-bright);
+  font-family: "Roboto", sans-serif;
 `;
 
 export const ListItem = styled.li`
@@ -61,15 +72,28 @@ export const ListItem = styled.li`
 
 export const Right = styled.div`
   flex: 1;
-  ${mobile({ backgroundColor: "#fff8f8" })}
+  ${mobile({ backgroundColor: "#fff8f8" })};
+  padding: 20px;
 `;
 
 export const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  color: var(--font-bright);
+`;
+
+const turnIt = keyframes`
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);
 `;
 
 export const Payment = styled.img`
   width: 50%;
+  transition: all 5s ease;
+  &:hover {
+    animation-name: ${turnIt};
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
 `;

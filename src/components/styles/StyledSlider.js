@@ -39,10 +39,11 @@ export const Title = styled.h1`
 `;
 
 export const Desc = styled.p`
-  margin: 50px 0;
+  margin: 20px 0 60px;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
+  width: 70%;
 `;
 
 export const Button = styled.button`
@@ -54,7 +55,8 @@ export const Button = styled.button`
 
 export const InfoContainer = styled.div`
   flex: 1; //! follow the main axis (if we choose flex dir column the element will resize in height).
-  padding: 50px;
+  padding: 0px;
+  margin-top: -10%;
 `;
 
 export const Arrow = styled.div`

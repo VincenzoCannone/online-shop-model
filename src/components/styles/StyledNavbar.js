@@ -4,7 +4,8 @@ import { mobile } from "../../responsive";
 export const Container = styled.div`
   height: 60px;
   ${mobile({ height: "50px" })}
-  background-color: #8ac0da;
+  background-color: var(--navbar-bg);
+  height: 10vh;
 `;
 
 export const Wrapper = styled.div`
@@ -46,6 +47,7 @@ export const Input = styled.input`
 
 export const Logo = styled.h1`
   font-weight: bold;
+  font-size: 40px;
   ${mobile({ fontSize: "20px" })}
 `;
 

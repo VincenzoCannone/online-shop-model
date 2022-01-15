@@ -5,7 +5,7 @@ const Container = styled.div`
   padding: 20px 0px;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* background-color: #287b97; */
+  background: var(--product-bg);
 `;
 
 export default Container;
