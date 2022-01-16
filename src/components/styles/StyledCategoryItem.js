@@ -30,6 +30,7 @@ export const Info = styled.div`
 export const Title = styled.h1`
   color: white;
   margin-bottom: 20px;
+  font-size: var(--category-item-title);
 `;
 
 export const Button = styled.button`
@@ -39,4 +40,5 @@ export const Button = styled.button`
   color: gray;
   cursor: pointer;
   font-weight: 600;
+  font-size: var(--category-item-button);
 `;

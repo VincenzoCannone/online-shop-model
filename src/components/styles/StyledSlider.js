@@ -35,12 +35,12 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h1`
-  font-size: 70px;
+  font-size: var(--slider-title);
 `;
 
 export const Desc = styled.p`
   margin: 20px 0 60px;
-  font-size: 20px;
+  font-size: var(--slider-desc);
   font-weight: 500;
   letter-spacing: 3px;
   width: 70%;
@@ -48,7 +48,7 @@ export const Desc = styled.p`
 
 export const Button = styled.button`
   padding: 10px;
-  font-size: 20px;
+  font-size: var(--slider-button);
   background-color: transparent;
   cursor: pointer;
 `;

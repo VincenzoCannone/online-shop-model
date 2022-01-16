@@ -1,17 +1,20 @@
 import styled from "styled-components";
 import mobile from "../../responsive";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  background-color: var(--cart-bg);
+`;
 
 export const Wrapper = styled.div`
   padding: 20px;
   ${mobile({ padding: "10px" })}
-  background-color: #636375;
+  background-color: var(--cart-bg);
 `;
 
 export const Title = styled.h1`
   font-weight: 300;
   text-align: center;
+  font-size: var(--cart-title);
 `;
 
 export const Top = styled.div`
@@ -24,6 +27,7 @@ export const Top = styled.div`
 export const TopButton = styled.button`
   padding: 10px;
   font-weight: 600;
+  font-size: var(--cart-button);
   cursor: pointer;
   border: ${(props) => props.type === "filled" && "none"};
   background-color: ${(props) =>
@@ -39,6 +43,7 @@ export const TopText = styled.span`
   text-decoration: underline;
   margin: 0 10px;
   cursor: pointer;
+  font-size: var(--cart-top-text);
 `;
 
 export const Bottom = styled.div`
@@ -73,9 +78,13 @@ export const Details = styled.div`
   flex-direction: column;
 `;
 
-export const ProductName = styled.span``;
+export const ProductName = styled.span`
+  font-size: var(--cart-product-name);
+`;
 
-export const ProductId = styled.span``;
+export const ProductId = styled.span`
+  font-size: var(--cart-product-id);
+`;
 
 export const ProductColor = styled.div`
   width: 20px;
@@ -84,7 +93,9 @@ export const ProductColor = styled.div`
   background-color: ${(props) => props.color};
 `;
 
-export const ProductSize = styled.span``;
+export const ProductSize = styled.span`
+  font-size: var(--cart-product-size);
+`;
 
 export const PriceDetail = styled.div`
   flex: 1;
@@ -101,13 +112,13 @@ export const ProductAmountContainer = styled.div`
 `;
 
 export const ProductAmount = styled.div`
-  font-size: 24px;
+  font-size: var(--cart-product-amount);
   margin: 5px;
   ${mobile({ margin: "5px 15px" })}
 `;
 
 export const ProductPrice = styled.div`
-  font-size: 30px;
+  font-size: var(--cart-product-price);
   font-weight: 200;
   ${mobile({ marginBottom: "20px" })}
 `;
@@ -128,6 +139,7 @@ export const Summary = styled.div`
 
 export const SummaryTitle = styled.h1`
   font-weight: 200;
+  font-size: var(--cart-summary-title);
 `;
 
 export const SummaryItem = styled.div`
@@ -135,12 +147,16 @@ export const SummaryItem = styled.div`
   display: flex;
   justify-content: space-between;
   font-weight: ${(props) => props.type === "total" && "500"};
-  font-size: ${(props) => props.type === "total" && "24px"};
+  /* font-size: ${(props) => props.type === "total" && "24px"}; */
 `;
 
-export const SummaryItemText = styled.span``;
+export const SummaryItemText = styled.span`
+  font-size: var(--cart-summary-item-text-price);
+`;
 
-export const SummaryItemPrice = styled.span``;
+export const SummaryItemPrice = styled.span`
+  font-size: var(--cart-summary-item-text-price);
+`;
 
 export const Button = styled.button`
   width: 100%;
@@ -148,4 +164,5 @@ export const Button = styled.button`
   background-color: black;
   color: white;
   font-weight: 600;
+  font-size: var(--cart-button);
 `;

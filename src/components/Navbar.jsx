@@ -18,7 +18,7 @@ const navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>DressYouMind</Logo>
+          <Logo>DressYourMind</Logo>
         </Center>
         <Right>
           <MenuItem>Register</MenuItem>

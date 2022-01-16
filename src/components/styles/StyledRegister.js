@@ -2,10 +2,12 @@ import styled from "styled-components";
 import mobile from "../../responsive";
 
 export const Container = styled.div`
-  width: 90vw;
   height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(58, 108, 173, 0.5)),
-    url("https://images.pexels.com/photos/927629/pexels-photo-927629.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(138, 122, 101, 0.5)
+    ),
+    url("https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
       center;
   background-size: cover;
   display: flex;
@@ -14,44 +16,45 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 25%;
+  width: 40%;
   padding: 20px;
   background-color: white;
   ${mobile({ width: "75%" })}
 `;
 
 export const Title = styled.h1`
-  font-family: "Roboto", sans-serif;
-  font-size: var(--login-title);
+  font-family: "roboto";
+  font-size: var(--register-title);
   font-weight: 300;
 `;
 
 export const Form = styled.form`
-  font-family: "Roboto", sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 `;
 
 export const Input = styled.input`
+  font-family: "roboto";
+  font-size: var(--register-input);
   flex: 1;
   min-width: 40%;
-  margin: 10px 0;
+  margin: 20px 10px 0 0;
   padding: 10px;
 `;
 
+export const Agreement = styled.span`
+  font-family: "roboto";
+  font-size: var(--register-agreement);
+  margin: 20px 0;
+`;
+
 export const Button = styled.button`
+  font-family: "roboto";
+  font-size: var(--register-button);
   width: 40%;
   border: none;
   padding: 15px 20px;
   background-color: teal;
   color: white;
-  cursor: pointer;
-  margin-bottom: 10px;
-`;
-
-export const Link = styled.a`
-  margin: 5px 0;
-  font-size: var(--login-link);
-  text-decoration: underline;
   cursor: pointer;
 `;

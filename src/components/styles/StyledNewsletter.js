@@ -11,13 +11,13 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 70px;
+  font-size: var(--newsletter-title);
   margin-bottom: 20px;
   ${mobile({ fontSize: "30px" })}
 `;
 
 export const Desc = styled.div`
-  font-size: 24px;
+  font-size: var(--newsletter-desc);
   font-weight: 300;
   margin-bottom: 20px;
   ${mobile({ textAlign: "center" })}
@@ -37,6 +37,10 @@ export const Input = styled.input`
   border: none;
   flex: 8;
   padding-left: 20px;
+  font-size: var(--newsletter-input);
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const Button = styled.button`
