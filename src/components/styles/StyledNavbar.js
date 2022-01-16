@@ -47,7 +47,7 @@ export const Input = styled.input`
 
 export const Logo = styled.h1`
   font-weight: bold;
-  font-size: 40px;
+  font-size: var(--navbar-logo);
   ${mobile({ fontSize: "20px" })}
 `;
 

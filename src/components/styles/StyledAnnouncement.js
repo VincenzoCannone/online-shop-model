@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: var(--announcement);
   font-weight: 500;
 `;
 

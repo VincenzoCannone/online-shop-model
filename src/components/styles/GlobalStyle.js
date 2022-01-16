@@ -7,6 +7,8 @@ const GlobalStyle = createGlobalStyle`
       }
 
       html {
+
+        ${"" /* BACKGROUND-COLORS */}
         --body-bg: #f5f5f5;
         --announcement-bg: #f18d9e;
         --navbar-bg: white;
@@ -16,9 +18,16 @@ const GlobalStyle = createGlobalStyle`
         --newsletter-bg: #cacaca;
         --footer-bg: #3b3b3b;
 
-        ${"" /* =================== */}
+        ${"" /* ====== FONT COLORS ============= */}
 
         --font-bright: white;
+
+        ${"" /* ====== FONT SIZES ============= */}
+
+        font-size: 62.5%;
+        --announcement: 2.4rem;
+        --navbar-logo: 4rem;
+
       }
 
       h1, h2, h3 {

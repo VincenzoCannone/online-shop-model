@@ -35,8 +35,8 @@ export const Container = styled.div`
 `;
 
 export const Circle = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -46,9 +46,9 @@ export const Image = styled.img`
   height: 75%;
   z-index: 2;
 
-    Object-fit helps with pictures that are two wide … but it needs both: width & height;
-width: 100%;
-object-fit: contain;
+  /* Object-fit helps with pictures that are two wide … but it needs both: width & height; */
+  width: 100%;
+  object-fit: contain;
 `;
 
 export const Icon = styled.div`
