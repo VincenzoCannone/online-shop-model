@@ -16,21 +16,21 @@ export const FilterContainer = styled.div`
 `;
 
 export const Filter = styled.div`
-  margin: 20px;
-  ${mobile({ margin: "0 20px", display: "flex", flexDirection: "column" })}
+  margin: 2rem;
+  ${mobile({ margin: "0 2rem", display: "flex", flexDirection: "column" })}
 `;
 
 export const FilterText = styled.span`
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  margin-right: 20px;
-  ${mobile({ marginRight: "0px" })}
+  margin-right: 2rem;
+  ${mobile({ marginRight: "0" })}
 `;
 
 export const Select = styled.select`
-  margin-right: 20px;
-  padding: 10px;
-  ${mobile({ margin: "10px 0" })}
+  margin-right: 2rem;
+  padding: 1rem;
+  ${mobile({ margin: "1rem 0" })}
 `;
 
 export const Option = styled.option``;

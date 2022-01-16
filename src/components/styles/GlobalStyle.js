@@ -20,6 +20,9 @@ const GlobalStyle = createGlobalStyle`
         --footer-bg: #3b3b3b;
         --cart-bg: #ffffff;
         --productlist-top-bg: #ffffff;
+        --product-icons: #e9f5f5;
+        --create-button: #8a7a65;
+        --login-button: #4a82ca;
 
         ${"" /* ====== FONT COLORS ============= */}
 
@@ -70,6 +73,10 @@ const GlobalStyle = createGlobalStyle`
         --register-button: 2rem;
 
         --productlist-title: 3rem;
+
+        ${"" /* CONTAINER WIDTH */}
+
+        --container-width: 100%;
       }
 
       h1, h2, h3 {

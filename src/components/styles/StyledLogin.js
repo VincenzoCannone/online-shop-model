@@ -2,21 +2,20 @@ import styled from "styled-components";
 import mobile from "../../responsive";
 
 export const Container = styled.div`
-  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(58, 108, 173, 0.5)),
     url("https://images.pexels.com/photos/927629/pexels-photo-927629.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
       center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const Wrapper = styled.div`
   width: 25%;
-  padding: 20px;
-  background-color: white;
+  padding: 2rem;
+  background-color: var(--body-bg);
   ${mobile({ width: "75%" })}
 `;
 
@@ -27,7 +26,6 @@ export const Title = styled.h1`
 `;
 
 export const Form = styled.form`
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
 `;
@@ -35,23 +33,25 @@ export const Form = styled.form`
 export const Input = styled.input`
   flex: 1;
   min-width: 40%;
-  margin: 10px 0;
-  padding: 10px;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
 `;
 
 export const Button = styled.button`
+  margin-bottom: 1rem;
+  padding: 1.5rem 2rem;
   width: 40%;
   border: none;
-  padding: 15px 20px;
-  background-color: teal;
-  color: white;
   cursor: pointer;
-  margin-bottom: 10px;
+  color: white;
+  background-color: var(--login-button);
 `;
 
 export const Link = styled.a`
-  margin: 5px 0;
-  font-size: var(--login-link);
+  margin: 0.5rem 0;
   text-decoration: underline;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--login-link);
 `;
