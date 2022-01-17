@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: 2rem;
   background: var(--categories-bg);
 
-  ${mobile({ padding: "0px", flexDirection: "column" })}
+  ${mobile({ padding: "0", flexDirection: "column" })}
 `;
 
 export default Container;

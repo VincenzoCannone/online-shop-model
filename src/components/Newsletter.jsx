@@ -9,7 +9,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="your email" />
         <Button>
-          <Send />
+          <Send style={{ color: "var(--body-bg)", fontSize: "2.6rem", paddingTop: "0.3rem" }} />
         </Button>
       </InputContainer>
     </Container>

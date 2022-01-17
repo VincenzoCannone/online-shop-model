@@ -20,7 +20,7 @@ const Slider = () => {
   return (
     <Container>
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        <ArrowLeftOutlined />
+        <ArrowLeftOutlined style={{ color: "#5f5f5f", fontSize: "5rem" }} />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
@@ -37,7 +37,7 @@ const Slider = () => {
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right)")}>
-        <ArrowRightOutlined />
+        <ArrowRightOutlined style={{ color: "#5f5f5f", fontSize: "5rem" }} />
       </Arrow>
     </Container>
   );

@@ -47,7 +47,7 @@ export const Input = styled.input`
   outline: none;
 
   ${mobile({
-    width: "55px",
+    width: "5.5rem",
   })}
 `;
 
@@ -55,7 +55,7 @@ export const Logo = styled.h1`
   font-weight: bold;
   font-size: var(--navbar-logo);
 
-  ${mobile({ fontSize: "20px" })}
+  ${mobile({ fontSize: "2rem" })}
 `;
 
 export const Center = styled.div`
@@ -76,9 +76,9 @@ export const Right = styled.div`
 `;
 
 export const MenuItem = styled.div`
-  margin-left: 25px;
+  margin-left: 2.5rem;
   font-size: var(--navbar-menuitem);
   cursor: pointer;
 
-  ${mobile({ fontSize: "15px", marginLeft: "10px" })}
+  ${mobile({ fontSize: "1.5rem", marginLeft: "1rem" })}
 `;
