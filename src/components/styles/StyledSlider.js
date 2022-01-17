@@ -2,17 +2,17 @@ import styled from "styled-components";
 import { mobile } from "../../responsive";
 
 export const Container = styled.div`
-  width: 100%;
-  height: 80vh;
   display: flex;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  width: var(--container-width);
+  height: 80vh;
   ${mobile({ display: "none" })}
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
   display: flex;
+  height: 100%;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
   transition: all 1.5s ease;
 `;
@@ -35,34 +35,32 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h1`
-  font-size: 70px;
+  font-size: var(--slider-title);
 `;
 
 export const Desc = styled.p`
-  margin: 50px 0;
-  font-size: 20px;
-  font-weight: 500;
+  width: 70%;
+  margin: 2rem 0 6rem;
+  font-size: var(--slider-desc);
   letter-spacing: 3px;
 `;
 
 export const Button = styled.button`
-  padding: 10px;
-  font-size: 20px;
-  background-color: transparent;
+  padding: 1rem;
+  font-size: var(--slider-button);
+  background-color: var(--body-bg);
   cursor: pointer;
 `;
 
 export const InfoContainer = styled.div`
-  flex: 1; //! follow the main axis (if we choose flex dir column the element will resize in height).
-  padding: 50px;
+  flex: 1; //! follows the main axis (in cross axis (flex dir column) the element will resize in height).
+  padding: 0px;
+  margin-top: -10%;
 `;
 
 export const Arrow = styled.div`
-  width: 50px;
-  height: 50px;
-  background-color: #a89494;
-  border-radius: 50%;
   display: flex;
+  z-index: 2;
   align-items: center;
   justify-content: center;
   position: absolute; // position absolute refers to relative position ( Container)
@@ -70,10 +68,13 @@ export const Arrow = styled.div`
   //lets check
   top: 0; // in order to use margin: auto to center verticaly
   bottom: 0; // in order to use margin: auto to center verticaly
-  left: ${(props) => props.direction === "left" && "10px"};
-  right: ${(props) => props.direction === "right" && "10px"};
+  left: ${(props) => props.direction === "left" && "1rem"};
+  right: ${(props) => props.direction === "right" && "1rem"};
   margin: auto; // need a width to work properly
   cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
   opacity: 0.5;
-  z-index: 2;
+  background-color: var(--body-bg);
 `;
