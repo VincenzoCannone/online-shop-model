@@ -17,16 +17,16 @@ const Footer = () => {
         <Desc>Dressyourmind Eyewear is more than a brand.<br />We offer the best retro classic and vintage sunglasses. Made in Berlin. Inspired by the most popular Italian frame designs from the ’60s, the ’70s, 80’s and ’90s.</Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
-            <Facebook style={{ color: "#fff", fontSize: "2.4rem" }} />
+            <Facebook />
           </SocialIcon>
           <SocialIcon color="E4405F">
-            <Instagram style={{ color: "#fff", fontSize: "2.4rem" }} />
+            <Instagram />
           </SocialIcon>
           <SocialIcon color="55ACEE">
-            <Twitter style={{ color: "#fff", fontSize: "2.4rem" }} />
+            <Twitter />
           </SocialIcon>
           <SocialIcon color="E60023">
-            <Pinterest style={{ color: "#fff", fontSize: "2.4rem" }} />
+            <Pinterest />
           </SocialIcon>
         </SocialContainer>
       </Left>
