@@ -13,13 +13,13 @@ const Product = ({ item }) => {
       <Image src={item.img} />
       <Info>
         <Icon>
-          <ShoppingCartOutlined />
+          <ShoppingCartOutlined style={{ fontSize: "2rem" }} />
         </Icon>
         <Icon>
-          <SearchOutlined />
+          <SearchOutlined style={{ fontSize: "2rem" }} />
         </Icon>
         <Icon>
-          <FavoriteBorderOutlined />
+          <FavoriteBorderOutlined style={{ fontSize: "2rem" }} />
         </Icon>
       </Info>
     </Container>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 const Container = styled.div`
   display: flex;
@@ -7,9 +8,11 @@ const Container = styled.div`
   font-size: var(--announcement);
   font-weight: 500;
   height: 6rem;
-  width: var(--container-width);
+  min-width: var(--container-width);
   background-color: var(--announcement-bg);
   color: var(--font-bright);
+
+  ${mobile({ height: "4rem", fontSize: "1.6rem" })}
 `;
 
 export default Container;

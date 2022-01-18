@@ -14,7 +14,7 @@ const navbar = () => {
           <Language>EN</Language>
           <SearchContainer>
             <Input placeholder="Search" />
-            <Search style={{ color: "gray", fontSize: 16 }} />
+            <Search style={{ color: "gray", fontSize: "1.6rem" }} />
           </SearchContainer>
         </Left>
         <Center>
@@ -25,7 +25,7 @@ const navbar = () => {
           <MenuItem>Log In</MenuItem>
           <MenuItem>
             <Badge color="primary">
-              <ShoppingCartOutlined style={{ fontSize: "15px" }} />
+              <ShoppingCartOutlined style={{ fontSize: "2rem" }} />
             </Badge>
           </MenuItem>
         </Right>

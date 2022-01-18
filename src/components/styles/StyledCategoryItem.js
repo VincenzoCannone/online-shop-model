@@ -30,8 +30,10 @@ export const Info = styled.div`
 
 export const Title = styled.h1`
   margin-bottom: 2rem;
-  color: white;
+  color: #ffffff;
+  /* text-shadow: 2px 2px 8px #ff0000; */
   font-size: var(--category-item-title);
+  transition: all 0.5s ease-in-out;
 `;
 
 export const Button = styled.button`
