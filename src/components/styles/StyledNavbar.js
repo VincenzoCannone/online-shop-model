@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 10vh;
   background-color: var(--navbar-bg);
 
-  ${mobile({ height: "5rem" })}
+  ${mobile({ height: "8rem" })}
 `;
 
 export const Wrapper = styled.div`

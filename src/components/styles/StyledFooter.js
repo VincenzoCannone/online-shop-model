@@ -3,7 +3,7 @@ import mobile from "../../responsive";
 
 export const Container = styled.div`
   display: flex;
-  height: 27vh;
+  min-height: 10rem;
   background: var(--footer-bg);
 
   ${mobile({ flexDirection: "column" })}
@@ -48,7 +48,7 @@ export const SocialIcon = styled.div`
 export const Center = styled.div`
   flex: 1;
   padding: 2rem;
-  ${mobile({ display: "none" })}
+  /* ${mobile({})} */
 `;
 
 export const Title = styled.h3`
@@ -77,7 +77,7 @@ export const ListItem = styled.li`
 export const Right = styled.div`
   padding: 2rem;
   flex: 1;
-  ${mobile({ backgroundColor: "#fff8f8" })};
+  /* ${mobile({})}; */
 `;
 
 export const ContactItem = styled.div`
