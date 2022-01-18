@@ -15,20 +15,6 @@ const Footer = () => {
       <Left>
         <Logo>DressYourMind</Logo>
         <Desc>Dressyourmind Eyewear is more than a brand.<br />We offer the best retro classic and vintage sunglasses. Made in Berlin. Inspired by the most popular Italian frame designs from the ’60s, the ’70s, 80’s and ’90s.</Desc>
-        <SocialContainer>
-          <SocialIcon color="3B5999">
-            <Facebook />
-          </SocialIcon>
-          <SocialIcon color="E4405F">
-            <Instagram />
-          </SocialIcon>
-          <SocialIcon color="55ACEE">
-            <Twitter />
-          </SocialIcon>
-          <SocialIcon color="E60023">
-            <Pinterest />
-          </SocialIcon>
-        </SocialContainer>
       </Left>
       <Center>
         <Title>Usefull Links</Title>
@@ -52,7 +38,20 @@ const Footer = () => {
         <ContactItem>
           <MailOutline style={{ marginRight: "10px" }} />mail@applesecrets.com
         </ContactItem>
-        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+        <SocialContainer>
+          <SocialIcon color="3B5999">
+            <Facebook />
+          </SocialIcon>
+          <SocialIcon color="E4405F">
+            <Instagram />
+          </SocialIcon>
+          <SocialIcon color="55ACEE">
+            <Twitter />
+          </SocialIcon>
+          <SocialIcon color="E60023">
+            <Pinterest />
+          </SocialIcon>
+        </SocialContainer>
       </Right>
     </Container>
   );
