@@ -77,7 +77,11 @@ const GlobalStyle = createGlobalStyle`
         ${"" /* CONTAINER WIDTH */}
 
         --container-width: 100%;
-      }
+
+        --min-width: 1300px;
+        --max-width: 1301px;
+
+      ${"" /* GENERAL STUFF */}
 
       h1, h2, h3 {
         font-family: 'Kaushan Script', cursive;

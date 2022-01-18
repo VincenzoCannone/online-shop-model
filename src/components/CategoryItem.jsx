@@ -1,6 +1,5 @@
 import { Container, Image, Info, Title, Button } from './styles/StyledCategoryItem'
 import { useState } from 'react';
-import { letterSpacing } from '@mui/system';
 
 const CategoryItem = ({ item }) => {
 

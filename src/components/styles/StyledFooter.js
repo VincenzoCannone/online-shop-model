@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import mobile from "../../responsive";
+import { keepItNarrow } from "../../bigscreenbreakpoint";
 
 export const Container = styled.div`
   display: flex;
@@ -7,6 +8,8 @@ export const Container = styled.div`
   background: var(--footer-bg);
 
   ${mobile({ flexDirection: "column" })}
+
+  ${keepItNarrow()}
 `;
 
 export const Left = styled.div`

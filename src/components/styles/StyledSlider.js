@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { keepItNarrow } from "../../bigscreenbreakpoint";
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +8,10 @@ export const Container = styled.div`
   position: relative;
   width: var(--container-width);
   height: 80vh;
+
   ${mobile({ display: "none" })}
+
+  ${keepItNarrow()}
 `;
 
 export const Wrapper = styled.div`

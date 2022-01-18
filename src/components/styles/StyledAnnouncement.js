@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { keepItNarrow } from "../../bigscreenbreakpoint";
 
 const Container = styled.div`
   display: flex;
@@ -13,6 +14,8 @@ const Container = styled.div`
   color: var(--font-bright);
 
   ${mobile({ height: "4rem", fontSize: "1.6rem" })}
+
+  ${keepItNarrow()}
 `;
 
 export default Container;

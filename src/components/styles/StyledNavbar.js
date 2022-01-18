@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import { keepItNarrow } from "../../bigscreenbreakpoint";
 
 export const Container = styled.div`
   height: 6rem;
@@ -7,6 +8,8 @@ export const Container = styled.div`
   background-color: var(--navbar-bg);
 
   ${mobile({ height: "8rem" })}
+
+  ${keepItNarrow()}
 `;
 
 export const Wrapper = styled.div`

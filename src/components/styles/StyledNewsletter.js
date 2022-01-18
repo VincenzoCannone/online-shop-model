@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import mobile from "../../responsive";
+import { keepItNarrow } from "../../bigscreenbreakpoint";
 
 export const Container = styled.div`
   display: flex;
@@ -8,6 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   height: 60vh;
   background: var(--newsletter-bg);
+
+  ${keepItNarrow()}
 `;
 
 export const Title = styled.h1`
