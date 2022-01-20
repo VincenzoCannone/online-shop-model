@@ -78,7 +78,8 @@ const GlobalStyle = createGlobalStyle`
 
         ${"" /* CONTAINER WIDTH */}
 
-        --container-width: 100%;
+        --container-width: 90%;
+        --container-width-375: 100%;
       }
 
       h1, h2, h3 {

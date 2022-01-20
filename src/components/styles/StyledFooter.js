@@ -5,8 +5,10 @@ export const Container = styled.div`
   display: flex;
   min-height: 10rem;
   background: var(--footer-bg);
+  width: var(--container-width);
+  margin: auto;
 
-  ${mobile({ flexDirection: "column" })}
+  ${mobile({ flexDirection: "column", width: "100%" })}
 `;
 
 export const Left = styled.div`

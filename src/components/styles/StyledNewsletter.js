@@ -7,7 +7,10 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   height: 60vh;
+  width: var(--container-width);
+  margin: auto;
   background: var(--newsletter-bg);
+  ${mobile({ fontSize: "3rem", width: "100%" })}
 `;
 
 export const Title = styled.h1`
