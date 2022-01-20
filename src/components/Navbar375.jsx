@@ -23,7 +23,7 @@ const navbar = () => {
 
                 <Menue isOpen={isOpen}>
                     <Circle>
-                        <MenueClose onClick={toggleIt}>X</MenueClose>
+                        <MenueClose className={isOpen ? 'without' : 'with'} onClick={toggleIt}>X</MenueClose>
                     </Circle>
 
                     <MenueContainer>

@@ -56,11 +56,6 @@ export const MenueContainer = styled.div`
   font-family: "roboto";
 `;
 
-const turnIt = keyframes`
-  0% {opacity: 1;}
-  100% {opacity: 0;};
-`;
-
 export const Circle = styled.div`
   display: flex;
   justify-content: center;
@@ -75,6 +70,11 @@ export const Circle = styled.div`
   border-radius: 50%;
   background-color: transparent;
   opacity: 0.8;
+`;
+
+const turnIt = keyframes`
+  0% {opacity: 1;}
+  100% {opacity: 0;};
 `;
 
 export const MenueClose = styled.span`
