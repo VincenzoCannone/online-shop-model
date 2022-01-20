@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { popularProducts } from "../data";
+// import { popularProducts } from "../data";
 import Product from "./Product";
 import Container from "./styles/StyledProducts";
 
@@ -40,12 +40,29 @@ const Products = ({ cat, filters, sort }) => {
       );
   }, [products, cat, filters]);
 
-  //! change popularproducts with filteredProduct (line 53)
+  useEffect(() => {
+    if (sort === "newest") {
+      setfilteredProducts((prev) =>
+        [...prev].sort((a, b) => a.createdAt - b.createdAt)
+      );
+    } else if (sort === "asc") {
+      setfilteredProducts((prev) =>
+        [...prev].sort((a, b) => a.price - b.price)
+      );
+    } else {
+      setfilteredProducts((prev) =>
+        [...prev].sort((a, b) => b.price - a.price)
+      );
+    }
+  }, [sort]);
+
   return (
     <Container>
-      {popularProducts.map((item) => (
-        <Product item={item} key={item.id} />
-      ))}
+      {cat
+        ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
+        : products
+            .slice(0, 8)
+            .map((item) => <Product item={item} key={item.id} />)}
     </Container>
   );
 };
