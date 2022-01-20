@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     img: "/Pictures/Categories/pexels-the-happiest-face-)-1261422.jpeg",
     title: "Street",
+    cat: "street",
   },
   {
     id: 2,
     img: "/Pictures/Categories/pexels-anna-shvets-3727461.jpeg",
     title: "Business",
+    cat: "Business",
   },
   {
     id: 3,
     img: "/Pictures/Categories/pexels-maksim-goncharenok-4380970.jpeg",
     title: "Casual",
+    cat: "Casual",
   },
 ];
 
@@ -44,14 +47,17 @@ export const popularProducts = [
   {
     id: 1,
     img: "/Pictures/sunglasses/damen herren men women sunglasses sonennbrillen (29).jpg",
+    cat: "Casual",
   },
   {
     id: 2,
     img: "/Pictures/sunglasses/damen herren men women sunglasses sonennbrillen (17).jpg",
+    cat: "Casual",
   },
   {
     id: 3,
     img: "/Pictures/sunglasses/damen herren men women sunglasses sonennbrillen (5).jpg",
+    cat: "Casual",
   },
   {
     id: 4,

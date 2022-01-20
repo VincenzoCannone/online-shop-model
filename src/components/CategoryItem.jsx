@@ -1,6 +1,12 @@
-import { Container, Image, Info, Title, Button } from './styles/StyledCategoryItem'
-import { useState } from 'react';
-import { letterSpacing } from '@mui/system';
+import {
+  Container,
+  Image,
+  Info,
+  Title,
+  Button,
+} from "./styles/StyledCategoryItem";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const CategoryItem = ({ item }) => {
 
@@ -16,12 +22,13 @@ const CategoryItem = ({ item }) => {
 
   return (
     <Container onMouseOver={changeIt} onMouseLeave={setBack}>
+      <Link to={`/products/${item.cat}`}></Link>
       <Image src={item.img} />
       <Info>
         <Title style={theCSS}>{item.title}</Title>
         <Button>SHOP NOW</Button>
       </Info>
-    </Container >
+    </Container>
   );
 };
 
