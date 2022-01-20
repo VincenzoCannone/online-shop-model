@@ -6,6 +6,7 @@ export const Container = styled.div`
   overflow: hidden;
   position: relative;
   width: var(--container-width);
+  margin: auto;
   height: 80vh;
   ${mobile({ display: "none" })}
 `;

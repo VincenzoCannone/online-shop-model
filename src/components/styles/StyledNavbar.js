@@ -5,8 +5,10 @@ export const Container = styled.div`
   height: 6rem;
   height: 10vh;
   background-color: var(--navbar-bg);
+  width: var(--container-width);
+  margin: auto;
 
-  ${mobile({ height: "8rem" })}
+  ${mobile({ height: "8rem", display: "none", width: "100%" })}
 `;
 
 export const Wrapper = styled.div`

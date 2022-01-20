@@ -9,22 +9,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const CategoryItem = ({ item }) => {
-  const [theCSS, setCSS] = useState({
-    color: "#fff",
-    spacing: "0",
-    shadow: "2px 2px 8px #888",
-  });
+
+  const [theCSS, setCSS] = useState({ color: '#fff', letterSpacing: '0', textShadow: "2px 2px 8px #888" });
 
   const changeIt = () => {
-    setCSS({ color: "#fff", spacing: "0.5rem", shadow: "2px 2px 8px #333" });
-  };
+    setCSS({ color: '#fff', letterSpacing: '0.5rem', textShadow: "2px 2px 8px #333" });
+  }
 
   const setBack = () => {
-    setCSS({ color: "#fff", spacing: "0", shadow: "2px 2px 8px #888" });
-  };
+    setCSS({ color: '#fff', letterSpacing: '0', textShadow: "2px 2px 8px #888" });
+  }
 
   return (
     <Container onMouseOver={changeIt} onMouseLeave={setBack}>
+
       <Link to={`/products/${item.cat}`}>
         <Image src={item.img} />
         <Info>
