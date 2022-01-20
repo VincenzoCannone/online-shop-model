@@ -42,7 +42,7 @@ export const Menue = styled.div`
   left: ${(props) => (props.isOpen ? 0 : "-100vw")};
   width: 100vw;
   height: 100vh;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   z-index: 50;
 `;
 
@@ -69,12 +69,8 @@ export const Circle = styled.div`
   cursor: pointer;
   border-radius: 50%;
   background-color: transparent;
-  opacity: 0.8;
-`;
-
-const turnIt = keyframes`
-  0% {opacity: 1;}
-  100% {opacity: 0;};
+  opacity: ${(props) => (props.isOpen ? 0.8 : 0)};
+  transition: all 0.9s ease-in-out;
 `;
 
 export const MenueClose = styled.span`
@@ -82,8 +78,8 @@ export const MenueClose = styled.span`
   font-size: 2.5rem;
   color: #444444;
   font-family: "roboto";
-
-  /* animation: ${turnIt} 1s forwards; */
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  transition: all 0.9s ease-in-out;
 `;
 
 export const List = styled.li`

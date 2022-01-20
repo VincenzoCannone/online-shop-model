@@ -22,19 +22,19 @@ const navbar = () => {
                 </Right>
 
                 <Menue isOpen={isOpen}>
-                    <Circle>
-                        <MenueClose className={isOpen ? 'without' : 'with'} onClick={toggleIt}>X</MenueClose>
+                    <Circle isOpen={isOpen}>
+                        <MenueClose isOpen={isOpen} onClick={toggleIt}>X</MenueClose>
                     </Circle>
 
                     <MenueContainer>
                         <ul>
-                            <List><Link href="#" className="link">Home</Link></List>
-                            <List><Link href="#" className="link">Login</Link></List>
-                            <List><Link href="#" className="link">Register</Link></List>
-                            <List><Link href="#" className="link">About Us</Link></List>
-                            <List><Link href="#" className="link">Products</Link></List>
-                            <List><Link href="#" className="link">Search</Link></List>
-                            <List><Link href="#" className="link">Cart</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>Home</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>Login</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>Register</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>About Us</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>Products</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>Search</Link></List>
+                            <List><Link href="#" isOpen={isOpen} onClick={toggleIt}>Cart</Link></List>
                         </ul>
                     </MenueContainer>
 
