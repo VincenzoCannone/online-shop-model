@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Wrapper, Left, Logo, Right, Menue, MenueContainer, Circle, MenueClose, List, Link } from './styles/StyledNavbar375';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const navbar = () => {
+const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -46,4 +46,4 @@ const navbar = () => {
     );
 };
 
-export default navbar;
+export default Navbar;
