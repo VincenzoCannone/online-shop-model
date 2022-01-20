@@ -22,8 +22,7 @@ const CategoryItem = ({ item }) => {
 
   return (
     <Container onMouseOver={changeIt} onMouseLeave={setBack}>
-
-      <Link to={`/products/${item.cat}`}>
+ <Link to={`/products/${item.cat}`}>
         <Image src={item.img} />
         <Info>
           <Title
