@@ -6,6 +6,10 @@ export const Container = styled.div`
   position: relative;
   margin: 0.3rem;
   height: 70vh;
+  width: var(--container-width);
+  margin: auto;
+
+  ${mobile({ width: "100%" })}
 `;
 
 export const Image = styled.img`

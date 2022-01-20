@@ -33,7 +33,9 @@ const GlobalStyle = createGlobalStyle`
 
         font-size: 62.5%;
         --announcement: 2.4rem;
+        
         --navbar-logo: 4rem;
+        --navbar-logo-mobile: 2.8rem;
         --navbar-language: 1.4rem;
         --navbar-menuitem: 1.4rem;
 
@@ -76,7 +78,8 @@ const GlobalStyle = createGlobalStyle`
 
         ${"" /* CONTAINER WIDTH */}
 
-        --container-width: 100%;
+        --container-width: 90%;
+        --container-width-375: 100%;
       }
 
       h1, h2, h3 {
@@ -90,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
       }
 
       body {
-        width: 90%;
+        width: 100%;
         margin: auto;
         background-color: var(--body-bg);
       }
