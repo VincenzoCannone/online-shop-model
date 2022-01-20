@@ -7,7 +7,6 @@ import {
 } from "./styles/StyledCategoryItem";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { letterSpacing } from "@mui/system";
 
 const CategoryItem = ({ item }) => {
   const [theCSS, setCSS] = useState({

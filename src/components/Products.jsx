@@ -40,6 +40,7 @@ const Products = ({ cat, filters, sort }) => {
       );
   }, [products, cat, filters]);
 
+  //! change popularproducts with filteredProduct (line 53)
   return (
     <Container>
       {popularProducts.map((item) => (

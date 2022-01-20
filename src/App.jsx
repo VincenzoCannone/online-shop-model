@@ -1,5 +1,5 @@
 //  short cut rafce   REACT ARROW FUNCTION EXPORT COMPONENT
-import GlobalStyle from './components/styles/GlobalStyle';
+import GlobalStyle from "./components/styles/GlobalStyle";
 import Product from "./pages/Product";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
@@ -7,7 +7,6 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Products from "./components/Products";
 
 //! Router V6!!!
 // in Products categories we can add instead of categories ( ex all,women ,blue, xl)
