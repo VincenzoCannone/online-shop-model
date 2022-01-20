@@ -27,32 +27,38 @@ export const categories = [
     id: 1,
     img: "/Pictures/Categories/pexels-the-happiest-face-)-1261422.jpeg",
     title: "Street",
-    cat: "street",
+    cat: "sunglasses",
   },
   {
     id: 2,
     img: "/Pictures/Categories/pexels-anna-shvets-3727461.jpeg",
     title: "Business",
-    cat: "Business",
+    cat: "sunglasses",
   },
   {
     id: 3,
     img: "/Pictures/Categories/pexels-maksim-goncharenok-4380970.jpeg",
     title: "Casual",
-    cat: "Casual",
+    cat: "sunglasses",
   },
 ];
 
 export const popularProducts = [
   {
     id: 1,
+    title: "oval sunglasses",
+    desc: "oval sunglasses 70s style",
     img: "/Pictures/sunglasses/damen herren men women sunglasses sonennbrillen (29).jpg",
-    cat: "Casual",
+    cat: ["casual"],
+    size: ["standard"],
+    color: ["blue", "brown", "black"],
+    price: 29,
   },
+
   {
     id: 2,
     img: "/Pictures/sunglasses/damen herren men women sunglasses sonennbrillen (17).jpg",
-    cat: "Casual",
+    cat: ["black", "m"],
   },
   {
     id: 3,
@@ -78,6 +84,7 @@ export const popularProducts = [
   {
     id: 8,
     img: "/Pictures/sunglasses/damen herren men women sunglasses sonennbrillen (30).jpg",
+    cat: ["black", "oversized"],
   },
 ];
 

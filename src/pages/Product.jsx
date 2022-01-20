@@ -135,9 +135,9 @@ const Product = () => {
             <Filter>
               <FilterSize>
                 <FilterTitle>Size</FilterTitle>
-                <FilterSizeOption>L</FilterSizeOption>
-                <FilterSizeOption>M</FilterSizeOption>
-                <FilterSizeOption>S</FilterSizeOption>
+                <FilterSizeOption>small</FilterSizeOption>
+                <FilterSizeOption>standard</FilterSizeOption>
+                <FilterSizeOption>oversize</FilterSizeOption>
               </FilterSize>
             </Filter>
           </FilterContainer>

@@ -22,12 +22,22 @@ const CategoryItem = ({ item }) => {
 
   return (
     <Container onMouseOver={changeIt} onMouseLeave={setBack}>
-      <Link to={`/products/${item.cat}`}></Link>
-      <Image src={item.img} />
-      <Info>
-        <Title style={theCSS}>{item.title}</Title>
-        <Button>SHOP NOW</Button>
-      </Info>
+
+      <Link to={`/products/${item.cat}`}>
+        <Image src={item.img} />
+        <Info>
+          <Title
+            style={{
+              color: theCSS.color,
+              letterSpacing: theCSS.spacing,
+              textShadow: theCSS.shadow,
+            }}
+          >
+            {item.title}
+          </Title>
+          <Button>SHOP NOW</Button>
+        </Info>
+      </Link>
     </Container>
   );
 };
