@@ -1,10 +1,12 @@
-// EXTENSIONS VS CODE
+# EXTENSIONS VS CODE
 
-ES7 React/Redux/GraphQL/React-Native snippets
-Better Comments
+ES7 React/Redux/GraphQL/React-Native snippets Better Comments
 
-// Dependencies
+# PLEASE RUN COMMAND TO INSTALL
 
-npm i
-npm i "styled-components"
-npm i @mui/material @emotion/react @emotion/styled
+npm i "styled-components" @mui/material @emotion/react @emotion/styled @material-ui/icons
+react-router-dom axios cors
+
+# Visit https://www.youtube.com/watch?v=UjHT_NKR_gU
+
+for a better understanding of Router v6
